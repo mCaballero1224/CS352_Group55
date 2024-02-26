@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+/*
+ COLORSCHEME 
+*/
+
+:root {
+	--custom-color-name:;
+    --golden-sand: #fcdb72;
+	--custom-embellishment-name:;
+	--light-sea-green: #16C0B7ff;
+	--opaque-light-sea-green: #16C0B7ef;
+	--midnight-green: #0A414Aff;
+	--opaque-midnight-green: #0A414Aaf;
+	--caribbean-current: #156C6Fff;
+	--beige: #EEEFD6ff;
+	--opaque-beige: #EEEFD6bf;
+	--tiffany-blue: #AFE2D6af;
+	--gunmetal: #06222Aff;
+	--seashell: #ffbec7ff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#loginForm {
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "firstName lastName"
+        "email email"
+        "password password"
+        "passwordConfirmation passwordConfirmation"
+        "submit submit";
+    max-width: 350px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menuLink {
+    text-align: center;
+    display: block;
+    margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
+    /* login form styling */ 
+    #firstName {
+        grid-area: firstName;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    #lastName {
+        grid-area: lastName;
+    }
+
+    #userEmail {
+        grid-area: email;
+    }
+
+    #userPassword {
+        grid-area: password;
+    }
+
+    #passwordConfirmation {
+        grid-area: passwordConfirmation;
+    }
+    
+    #loginSubmitBtn {
+        grid-area: submit;
+    }
+
+#copyright {
+    text-align: center;
 }
